@@ -1,0 +1,256 @@
+##
+## Visual Studio Code
+##
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+##
+## .NET Core / .NET 8
+##
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+PublishProfiles/
+
+# Common .NET files
+*.exe
+*.dll
+*.pdb
+*.cache
+*.log
+*.tmp
+*.temp
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.pidb
+*.booproj
+*.svclog
+*.scc
+
+##
+## Visual Studio / Rider IDE
+##
+# Visual Studio
+.vs/
+*.vsix
+*.vspx
+*.sap
+*.opensdf
+*.sdf
+
+# Rider
+.idea/
+*.sln.iml
+
+# Visual Studio Code
+.history/
+
+##
+## Security & API Keys (CRITICAL for Vonage/OpenAI/Google)
+##
+# Configuration files with secrets
+appsettings.json
+appsettings.Production.json
+appsettings.Local.json
+appsettings.*.json
+
+# Certificates and keys
+*.key
+*.p12
+*.pfx
+*.cer
+*.crt
+*.pem
+
+# Vonage specific secrets
+vonage_workshop_private_key.key
+*.private.key
+vonage_*.key
+
+# Google Cloud credentials and tokens
+credentials.json
+service-account-key.json
+google-credentials.json
+TokenStore/
+token.json
+*.googleapis.com
+
+# AI Service API keys (OpenAI, Claude, etc.)
+openai-key.txt
+claude-key.txt
+claude-api-key.txt
+anthropic-key.txt
+anthropic-api-key.txt
+ai-keys.json
+api-keys.json
+*-ai-key*
+*claude*key*
+*anthropic*key*
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Azure secrets
+*.azurePubxml
+*.azureProfile
+
+# Other secrets
+secrets.json
+appsecrets.json
+*secret*
+*password*
+*token*
+*key.json
+
+# Claude AI specific
+claude-config.json
+claude-settings.json
+claude-credentials.json
+anthropic-config.json
+anthropic-settings.json
+.clauderc
+.anthropicrc
+claude.env
+anthropic.env
+claude.md
+
+##
+## Vonage Voice App Specific
+##
+# Audio recordings (sensitive user data)
+*.mp3
+*.wav
+*.m4a
+*.aac
+*.ogg
+*.flac
+recordings/
+audio/
+voice-recordings/
+
+# Transcription files (sensitive user data)
+transcriptions/
+*.transcript
+*.txt.tmp
+transcripts/
+
+# Call logs and data (potentially sensitive)
+call-logs/
+call-data/
+*.call-log
+
+# ngrok tunneling
+ngrok
+ngrok.exe
+ngrok.log
+ngrok.yml
+tunnel_*.log
+
+##
+## Development Tools
+##
+# Package managers
+packages/
+node_modules/
+*.nupkg
+*.snupkg
+
+# Test results
+TestResults/
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+
+# Benchmark results
+BenchmarkDotNet.Artifacts/
+
+# StyleCop
+StyleCopReport.xml
+
+# NuGet
+*.nuget.props
+*.nuget.targets
+
+##
+## Operating System
+##
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+##
+## Temporary and backup files
+##
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+*.swp
+*.swo
+*.autosave
+
+##
+## Documentation builds (if using DocFX or similar)
+##
+_site/
+docs/_site/

@@ -1,0 +1,6 @@
+@Vonage_App_POC_HostAddress = http://localhost:5185
+
+GET {{Vonage_App_POC_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
